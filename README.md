@@ -1,30 +1,44 @@
 # 🎓 Student Performance Tracker
 
-A **Flask + SQLite web application** to manage students, track grades, calculate averages, and generate performance reports.  
-This project provides a modern **Bootstrap-based dashboard** for managing student data with features like adding students, assigning grades, class averages, toppers, and data backup.
+This is my **first project using Flask and SQLite** 🎉.  
+I built it to learn how a backend framework (Flask) works with a database (SQLite) and how to combine them with HTML, Bootstrap, and Jinja2 templates to create a complete web application.  
+
+The app helps to **manage students and their grades**, calculate averages, find toppers, and generate reports — all inside a simple but modern dashboard UI.  
+
+---
+
+## 🚀 What I Learned
+- How to set up a Flask project and run a development server.  
+- How to connect Flask with **SQLite** using **SQLAlchemy ORM**.  
+- How to create models (`Student`, `Grade`) and define relationships.  
+- How to use **Flask routes** to handle forms and render templates.  
+- How to use **Jinja2 templates** with Bootstrap for a modern UI.  
+- How to implement backup & restore with files.  
 
 ---
 
 ## ✨ Features
-- 📊 **Dashboard** – Quick stats on students, grades, and class average.  
-- 👩‍🎓 **Manage Students** – Add, list, and view individual student profiles with their grades.  
-- 📝 **Grade Management** – Assign grades for different subjects.  
-- 📈 **Reports** – View per-student averages and class averages by subject.  
+- 📊 **Dashboard** – Shows quick stats like total students, total grades, and class average.  
+- 👩‍🎓 **Students** – Add new students, view student lists, and see their details.  
+- 📝 **Grades** – Assign grades to students for different subjects.  
+- 📈 **Reports** – Calculate averages per student and per subject.  
 - 🏆 **Topper** – Find the highest scorer in a subject.  
-- 💾 **Backup & Restore** – Export all student data to a file and re-import it later.  
-- 🎨 **Modern UI** – Built with Bootstrap 5 & responsive sidebar layout.  
+- 💾 **Backup & Restore** – Export all student data into a file and re-import later.  
+- 🎨 **Responsive Design** – Clean Bootstrap 5 interface.  
 
 ---
 
 ## 🛠️ Tech Stack
-- **Backend:** Python (Flask), SQLAlchemy ORM  
-- **Database:** SQLite  
-- **Frontend:** HTML, Jinja2, Bootstrap 5, Bootstrap Icons  
-- **Other:** Flash messages, file-based backup  
+- **Backend:** Python (Flask)  
+- **Database:** SQLite (via SQLAlchemy)  
+- **Frontend:** Bootstrap 5 + Jinja2 templates  
+- **Other:** Flask Flash messages, file-based backup  
 
 ---
 
-## 🚀 Getting Started
+## 📂 Project Structure
+
+
 
 ### 1️⃣ Clone the repo
 ```bash
