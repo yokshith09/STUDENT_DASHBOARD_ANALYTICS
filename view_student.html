@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}View Student{% endblock %}
+{% block content %}
+<h1>{{ student.name }}</h1>
+<p>Roll Number: {{ student.roll_number }}</p>
+<h3>Grades</h3>
+<ul>
+{% for g in student.grades %}
+    <li>{{ g.subject }}: {{ g.score }}</li>
+{% endfor %}
+</ul>
+<p><b>Average:</b> {{ "%.2f"|format(student.average()) if student.average() else "-" }}</p>
+{% endblock %}

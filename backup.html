@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Backup{% endblock %}
+{% block content %}
+<h1>Backup Data</h1>
+<form method="post">
+    <button name="action" value="export" class="btn btn-primary">Export Data</button>
+</form>
+<form method="post" enctype="multipart/form-data" class="mt-3">
+    <input type="file" name="file" class="form-control mb-2">
+    <button name="action" value="import" class="btn btn-success">Import Data</button>
+</form>
+{% endblock %}

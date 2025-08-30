@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Class Average{% endblock %}
+{% block content %}
+<h1>Class Average</h1>
+<form method="post">
+    <input name="subject" class="form-control mb-2" placeholder="Subject">
+    <button class="btn btn-primary">Calculate</button>
+</form>
+{% if avg %}
+<p>Average for {{ subject }}: {{ "%.2f"|format(avg) }}</p>
+{% endif %}
+{% endblock %}
